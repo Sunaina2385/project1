@@ -1,0 +1,305 @@
+<!Doctype html>
+<Html>
+<Head>
+<title>Design</title>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+header{border: 2px solid lightgrey;}
+header #logo{height:110px;width:100px;border:2px solid white;margin-right:-1px;}
+
+.p{
+   
+   border: 2px solid lightgrey;
+	position:absolute;
+	height:450px;
+	width:450px;
+	margin-left:100px;	
+}
+aside{
+      display: flex;
+      flex-direction: column;
+      width:40%;
+      float: right;
+      height:450px;
+      overflow: scroll; 
+}
+#uploadfile{height:0;
+width:0;position:absolute;top:0;
+left:0;overflow:hidden;} 
+
+#uploadfile:target{
+   background-color:lightgrey;
+   border:1px solid grey;
+   height:30%;
+   width:30%;
+top:55%;
+left:40%;
+z-index:1;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  border:2px solid black;
+}
+.m1{
+   display:flex;
+   flex-wrap:wrap;
+   }
+
+.f{
+  height:100px;
+  width:100px;
+}
+/button/
+button{
+   width: 100PX;
+   height: 40px;
+   outline: none;
+   background-color: lightgrey;
+   color: black;
+   font-weight: 600;
+   font-size: 15px;
+   letter-spacing: 1px;
+   font-weight: 13px; 
+   border: none;
+}
+button:active{
+   transform:scale(1.1);
+}
+button:hover{
+   background-color: black;
+   color: white;   
+}
+#add-text{
+   height: 0;
+   width: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+#add-text:target{
+   height: 50%;
+   width: 30%;
+   background-color: rgb(240, 240, 240);
+   border: 1px solid black;
+   top: 25%;
+   left: 30%;
+   z-index: 1;
+}
+#cart{width:30%;}
+.dot {
+  height: 30px;
+  width: 30px;
+ 
+  border-radius: 50%;
+  display: inline-block;
+  border:2px solid black;
+}
+
+
+#cartwindow{
+   height: 0;
+   width: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+#cartwindow:target{
+   height: 92%;
+   width: 38%;
+   background-color: rgb(240, 240, 240);
+   border: 1px solid black;
+   
+   left: 59%;
+   z-index: 1;
+   padding:1rem;
+   text-align:center;
+}
+
+.m1{
+   
+   display:flex;
+   flex-wrap:wrap;
+   }
+
+
+
+.f{
+  height:100px;
+  width:100px;
+}
+.m3{text-align:center;
+}
+#cross{float:right;}
+#continue{background-color:tomato;height:4rem;width:60%;
+border-radius:2rem;color:white;
+font-size:1.5rem;
+}
+
+
+@media only screen and (max-width: 1100px){
+   header img{
+      width: 100%;
+   }
+   aside{
+      width: 30%;
+   }
+
+@media only screen and (max-width: 1000px){
+   .p{
+      margin-left: 0 !important;
+   }
+   h2{
+      margin-left: 0 !important;
+      width: 100%;
+   }
+}
+
+ @media only screen and (max-width: 1000px){
+   body{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+   }
+   main{
+      display: flex;
+      flex-direction: column;  
+	  margin-left:5%;
+	  margin-right:5%;
+   }
+   
+   aside{  
+      width: 90%;
+      margin-top: 80%;
+      overflow: visible;
+   }
+   .p{height:30vh !important;
+      margin-top: 10%;
+      height: inherit;
+	   
+	  
+   }
+   
+   h2{
+      margin-top: -3%;
+   }
+  
+} 
+ 
+
+</style>
+
+</HEAD>
+<BODY>
+   <header><img src='logo1.jpeg' id='logo'><img  id='icons' src='icon.png' width="1070px"></header>
+  <main>
+         <p> <h2 style="margin-left:200px;text-transform:uppercase">Design Your Bags</h2></p>
+   <div class="p">
+   <img src="designbag.png" height="400px" width="450px" class="p1">
+   </div>
+   
+<aside>
+<div class="m">
+<fieldset style="background-color:rgb(240, 240, 240);text-align:center;" >
+<legend><h3>Choose Your Colors</h3></legend>
+<a href=""> <span class="dot" style="background-color:black;"></span></a>
+ <span class="dot"  style="background-color:rgb(240, 240, 240);"></span>
+ 
+ <span class="dot"  style="background-color:rgb(120, 120, 120);"></span>
+ 
+
+
+</div>
+<div class="m2">
+<fieldset style="background-color:rgb(240, 240, 240);text-align:center;">
+<legend><h3>Choose Your Quantity</h3></legend>
+I would like &nbsp;
+<input type="number" min="0" max="100" value="0"   STYLE="HEIGHT:20PX;WIDTH:40PX;">&nbsp;&nbsp;printed<br><br>
+<input type="number"  min="0" max="100" value="0"  id="quantity" STYLE="HEIGHT:20PX;WIDTH:40PX;"><label for="quantity"> S</label>
+<input type="number" min="0" max="100" value="0"  STYLE="HEIGHT:20PX;WIDTH:40PX;"><label> M</label>
+<input type="number" min="0" max="100" value="0"  STYLE="HEIGHT:20PX;WIDTH:40PX;"><label> L</label>
+<input type="number" min="0" max="100" value="0"   STYLE="HEIGHT:20PX;WIDTH:40PX;"><label> XL</label>
+<input type="number" min="0" max="100" value="0"  STYLE="HEIGHT:20PX;WIDTH:40PX;"><label> 2XL</label>
+<input type="number" min="0" max="100" value="0"  STYLE="HEIGHT:20PX;WIDTH:40PX;"><label> 3XL</label>
+
+
+</fieldset>
+</div>
+<div class="m1">
+<fieldset style="background-color:rgb(240, 240, 240);text-align:center">
+<legend><h3>Add Media</h3></legend>
+<div>
+<a href="#uploadfile" id="choosefile"> <span class="f"><img src="6.1.png"></span></a>
+<div id="uploadfile"><a href="#choosefile">Back</a><br><input type="file"><br><input type="submit" value="DONE"></div>
+
+ <a href="#add-text"> <span class="f"><img src="6.2.png"></span> </a>
+ <div id="add-text">
+   <a href="#m1"> Back </a>
+   <p><b> Select Font Type: </b></p>
+   <select name="font" id="font" style="width: 160px; height: 25px;">
+      <option>Serif</option>
+      <option>Sans Serif</option>
+      <option>Cursive</option>
+      <option>Georgia</option>
+      <option>Arial</option>
+   </select>
+   <p> 
+      <a href="#add-text"><i class="fas fa-bold"></i></a> &ensp;
+      <a href="#add-text"><i class="fas fa-italic"></i></a> &ensp;
+      <a href="#add-text"><i class="fas fa-underline"></i></a> &ensp;
+      <a href="#add-text"><i class="fas fa-align-left"></i></a> &ensp;
+      <a href="#add-text"><i class="fas fa-align-center"></i></a> &ensp;
+      <a href="#add-text"><i class="fas fa-align-right"></i></a> &ensp;
+   </p>   
+   <p> 
+   <label><b>Font Size:</b></label>
+   <input type="number" min="10" max="100" value="0" STYLE="HEIGHT:20PX;WIDTH:40PX;">
+   </p>
+   <textarea name="text" rows="4" placeholder="Enter your text"></textarea>
+   <button>ADD</button>
+</div>
+
+ <span class="f"><img src="6.3.png"></span>
+ <span class="f"><img src="6.4.png" height='87px' width='220px'></span>
+ <span class="f"><img src="6.5.png" width='430px'></span>
+ </div>
+ </fieldset>
+</div>
+<br>
+
+<div CLASS="m3" STYLE=" BORDER:2PX SOLID rgb(240, 240, 240) ;background-color:rgb(240, 240, 240);">
+
+<P> <H1>PRICE:&#8377;600.00<H1><a href="payment.html">BUY NOW</a> <br><br>
+<a href="#cartwindow"><img src="cart1.png" id="cart"></a><P></div>
+<div id="cartwindow"><div>
+<h2 style="color:purple;">Your Cart <span id="cross"><a href="#"><i class="fas fa-times"></i></a></span></h2></div>
+<img src="shopping cart.jpg" style="height:60%">
+<br>
+<h2>Your Cart Is Empty</h2>
+<br>
+<a href="homepage.html"><button id="continue">Continue shopping</button></a>
+
+
+
+</aside>
+</main>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-b9a2e735-f972-4f7a-b98f-203779f38847"></div>
+
+
+</div>
+   
+</body>
+</html>

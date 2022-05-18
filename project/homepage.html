@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet href="contactinfo.css">
+	<link rel=stylesheet href="responsivehomepage.css">
+	<script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+	<title>Creative Prints</title>
+    
+    <style>
+	a{text-decoration:none;color:black;}
+        .logo {
+            border-top: 2px solid Gray;
+            border-bottom:2px solid Gray;
+            margin-top: 50px;
+}
+        .logoimage {
+            margin-top:6px;
+
+}
+        /* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position:absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: left;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+        .mainsection {
+            margin-top: 40px;
+        }
+       
+       
+        /**slideshowcss**/
+        #slideshow {
+  
+  overflow: hidden;
+  height: 400px;
+  width: 300px;
+  margin-left:150px;
+  clear:left;
+  float:left;
+}
+
+.slide-wrapper {
+  width: 1500px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 400px;
+  width: 300px;
+}
+
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -300px;}
+  50% {margin-left: -300px;}
+  60% {margin-left: -600px;}
+  70% {margin-left: -600px;}
+  80% {margin-left: -900px;}
+  90% {margin-left: -900px;}
+}
+.lb{
+    margin-top:150px;
+}
+#cartwindow{
+   height: 0;
+   width: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+#cartwindow:target{
+   height: 92%;
+   width: 38%;
+   top:1rem;
+   background-color: rgb(240, 240, 240);
+   border: 1px solid black;
+   
+   left: 59%;
+   z-index:9;
+   padding:1rem;
+   text-align:center;
+}
+#cross{float:right;}
+#continue{background-color:tomato;height:4rem;width:60%;
+border-radius:2rem;color:white;
+font-size:1.5rem;
+}
+/**pop offers**/
+
+
+
+    </style>
+    
+</head>
+<body>
+   
+    <div>
+        <div style="clear:right; float:right; margin-top:-30px; margin-right:230px;">
+      <a href="#cartwindow"><i class="fas fa-shopping-cart fa-2x" style="color:black;"></i></a>
+		<div id="cartwindow" ><div>
+<h2 style="color:purple;">Your Cart <span id="cross"><a href="#"><i class="fas fa-times"></i></a></span></h2></div>
+<img src="shopping cart.jpg" style="height:60%">
+<br>
+<h2>Your Cart Is Empty</h2>
+<br>
+<a href="homepage.html"><button id="continue">Continue shopping</button></a>
+
+
+
+</div>
+        <i class="fas fa-heart fa-2x"></i>
+        </div>
+		
+		<a href="sign in.html"><button type="submit" style=" height: 30px; width:80px;border:2px solid tomato; background-color:tomato; color:white; clear :right;
+	   float: right;margin-top:-35px;  margin-right:40px; border-radius:25px;text-decoration:none;text-align:center;">Sign in</button>
+	   </a>
+		
+       <a href="popup.html"><button type="submit"  id="offer" value="offers" style=" height: 30px; width:80px;border:2px solid tomato; background-color:tomato; color:white; 
+	   float: right;margin-top:-35px;  margin-right:130px; border-radius:25px;text-decoration:none;text-align:center;">offers</button>
+	   </a>
+    
+
+    </div>
+    <div class="logo">
+        <img class="logoimage" src="logo1.jpeg" alt="logo" height="100px" width="90px">
+        <span style="font-size:25px;">&nbsp;&nbsp;&nbsp; <b>Create</b></span><br>
+        <span style="font-size:20px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Custom Products</span>
+        <input id="search" type="search" placeholder="Search" style="clear:right; float:right; width:250px; margin-top:-50px; margin-right:20px;">
+        </div>
+ <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#slideshow">Clothing</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids and babies.html">Kids&Babies</a></li>
+          <li><a href="#bag">Accessories</a></li>
+		  
+        </ul>
+      </header>
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-b9a2e735-f972-4f7a-b98f-203779f38847"></div>
+    <div class="mainsection">
+        <img src="3.png" alt="homepageimage" width="100%">
+    </div>
+
+
+<!--slideshow part-->
+<div id="slideshow">
+    <div class="slide-wrapper">
+      <div class="slide"><h1 class="slide-number"><img src="c.png"></h1></div>
+      <div class="slide"><h1 class="slide-number"><img src="d.jpg"></h1></div>
+      <div class="slide"><h1 class="slide-number"><img src="e.jpg"></h1></div>
+      <div class="slide"><h1 class="slide-number"><img src="f.jpg"></h1></div>
+      <div class="slide"><h1 class="slide-number"><img src="c.png"></h1></div>
+    </div>
+  </div>
+  
+  <div class="lb">
+  <center>
+  <h2>Create your own custom Clothes</h2>
+  <p>Experiment with hundreds of designs and colors to find what appeals the most to your<br> consumers! We keep adding trendy new choices to our best-selling catalogues every <br>week!</p>
+ <a href="creativecreation.html"> <button style="height:60px;width:180px; background-color:tomato;border:solid tomato;color:white;"><b>Let's Create</button></a>
+  </center>
+  </div>
+
+  <!--Accessories slideshow-->
+  <div style="clear:right; float:right; margin-right:100px;">
+    <div>
+      <div class="slide"><h1 class="slide-number"><img src="bag1.jpg" id="bag"></h1></div>
+    </div>
+  </div>
+  
+  <div class="lb">
+  <center>
+  <h2>Create your own custom Bags</h2>
+  <p>Experiment with hundreds of designs and colors to find what appeals the most to your<br> consumers! We keep adding trendy new choices to our best-selling catalogues every <br>week!</p>
+<a href="bags.html" > <button style="height:60px;width:180px; background-color:tomato;border:solid tomato;color:white;"><b>Let's Create</button></a>
+  </center>
+  </div>
+  <div style="margin-top:150px;">
+      <img src="4.png" alt="qualityrelatedimage" width="100%">
+  </div>
+ <section id="contact">
+    <center>
+        <h1 class="section-heading mb50px">
+            <span>
+                <i class="far fa-address-card"></i>
+            </span>
+            <span> Contact </span>
+        </h1>
+    </center>
+        <div id="contact-container">
+
+            <div id="contact-form-container">
+                <form id="contact-form">
+                    <input id="input-name" name="name" type="text" placeholder="Your Name">
+                    <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                    <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                    <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <div id="my-details-container">
+
+                
+                
+                <h2> Our Address </h2>
+                <div class="my-details-info-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Chandigarh, Punjab</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>9999999999</span>
+                </div>
+                <div class="my-details-info-container">
+                    <i class="far fa-envelope"></i>
+                    <span>abc@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center social-icons">
+         <center>
+            <ul class="horizontal-list">
+
+                <li>
+                    <a href="https://www.linkedin.com/in/manisha-khattar-b5663641/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://stackoverflow.com/users/5608414/manisha?tab=profile" target="_blank">
+                        <i class="fab fa-stack-overflow"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://plus.google.com/u/0/103030702784925512939" target="_blank">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/manishakhattar54">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.quora.com/profile/Manisha-Khattar" target="_blank">
+                        <i class="fab fa-quora"></i>
+                    </a>
+                </li>
+            </ul>
+        </center>
+        </div>
+    </section>
+ 
+
+  
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<title>Categories</title>
+
+<style>
+body {
+   background-image:url(z.jpg);
+  font-family: Helvetica, sans-serif;
+  padding: 5%;
+  
+}
+a{text-decoration:none;color:white;}
+a:hover{color:black;}
+
+#slideshow {
+  
+  overflow: hidden;
+  height: 500px;
+  width: 300px;
+  margin: 0 auto;
+  clear:left;
+  float:left;
+}
+.slide-wrapper {
+  width: 1500px;
+  -webkit-animation: slide 15s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 300px;
+  width: 300px;
+}
+
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -300px;}
+  50% {margin-left: -300px;}
+  60% {margin-left: -600px;}
+  70% {margin-left: -600px;}
+  80% {margin-left: -900px;}
+  90% {margin-left: -900px;}
+}
+.lb{
+    margin-top:150px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div id="slideshow">
+  <div class="slide-wrapper">
+    <div class="slide"><h1 class="slide-number"><img src="c.png"></h1></div>
+    <div class="slide"><h1 class="slide-number"><img src="d.jpg"></h1></div>
+    <div class="slide"><h1 class="slide-number"><img src="e.jpg"></h1></div>
+    <div class="slide"><h1 class="slide-number"><img src="f.jpg"></h1></div>
+    <div class="slide"><h1 class="slide-number"><img src="g.jpg"></h1></div>
+  </div>
+</div>
+
+<div class="lb">
+<center style="background-color:tomato;text-decoration:none;color:white;margin-left:500px;width:600px;height:300px;border-radius:20%;border:2px solid black;">
+<h1 style="padding-top:20px;color:blue;"> CATEGORIES:</H1>
+
+<a href="creativecreation.html"><h1>CLOTHING</h1></a>
+<a href="bags.html"><h1 >ACCESSORIES</h1></a>
+
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+#logo{ height:50px  ;word-spacing:40px;color:white;font-size:30px;}
+#logo img{height:40px; width:120px;height:60px;
+}
+#display {background-color:black;width:100%; padding-left:50px;padding-right:50px;text-align:center;line-height:100px;border:2px solid red;
+}
+#signin{height:40px;width:150px;color:white;background-color:black;font-size:20px;}
+#main{padding-left:200px;padding-top:-40px;}
+#display input{height:40px;color:white;background-color:black;font-weight:bold;font-size:20px;}
+#display input#search{width:400px;height:40px;margin-top:20px;margin-bottom:20px;color:black;background-color:white;}
+
+body{background-image:url('restrau.jpeg'); 
+margin-top:-4px;font-size:100px;color:white;background-size:100%;background-repeat:no-repeat;height:80%;padding-top:10px;}
+#logo a{text-decoration:none;color:white }
+#logo a:hover{color:red;}
+#logo button:hover{color:red }
+main {
+    display: inline-block;
+}
+aside {
+    display: inline-block;
+	margin-left:270px;
+    
+   
+	padding-top:50px;
+}
+aside img{height:240px;width:240px;margin-bottom:-90px;border:2px solid orange;}

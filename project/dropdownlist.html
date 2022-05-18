@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drop Down list</title>
+<STYLE>
+.menudropdown{
+    width:75%;
+	height:200px;
+	margin:0 auto;
+}
+.menudropdown ul{
+      padding:0px;
+
+}
+
+.menudropdown li{
+         float:left;
+		 background-color:black;
+		 color:white;
+		 width:200px;
+		 height:30px;
+		 line-height:30px;
+		 font-size:23px;
+		 text-align:center;
+		 list-style:none;
+		 opacity:0.4;
+}
+
+.menudropdown ul li ul{
+         display:none;/**for dropdownlist**/
+}
+.menudropdown ul li:hover>ul{
+      display:block;
+}
+
+.menudropdown ul li:hover{
+      background-color:#32CD32;
+	  opacity:0.9;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="menudropdown">
+<ul>
+    <li> Shop By</li>
+	
+    <li> Categories
+	    <ul>
+		  <a href=""><li>T-shirts</li></a>
+		  <a href=""><li>Sweat shirts</li></a>
+		  <a href=""><li>Hoodies</li></a>
+		  <a href=""><li>Crop Tops</li></a>
+		  <a href=""><li>Tank Tops</li></a>
+		  <a href=""><li>Kids clothing</li></a>
+		 </ul>
+	</li>
+	
+	 <li> Accessories
+	    <ul>
+		  <li> Bags</li> 
+		</ul>
+	</li>
+</ul>
+</body>
+</html>

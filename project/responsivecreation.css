@@ -1,0 +1,30 @@
+/*setting logo at center and adjusting icons**/
+@media screen and (max-width:1320px){#icons{width:90vw;}
+#logo{position:relative;left:35%;width:20vw !important;}
+
+/**for two images on a screen**/
+@media screen and (max-width:1200px){#cs{width:30vw;height:60vh;}
+}
+/**for single image on screen**/
+@media screen and (max-width:600px){#cs{margine:0!important;width:70vw !important;height:50vh !important;}
+h1{font-size:1.5rem;}
+@media screen and (max-width:400px){#cs{margine:0!important;width:50vw !important;height:40vh !important;margin-right:50px;}
+h1{font-size:1.0rem;}
+#icons{display:none;}
+}
+
+
+
+	
+}
+@media screen and (max-width:1300px){
+	/* more button vil ve visible and section 2 will be hidden by default for this viewport */
+	
+	/* hidden section 2 by default */
+    .B{display:none !important;
+		
+		
+	}
+	
+	
+

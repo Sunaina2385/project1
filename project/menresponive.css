@@ -1,0 +1,9 @@
+/*setting logo at center and adjusting icons**/
+@media screen and (max-width:1320px){#icons{width:90vw;}
+#logo{position:absolute;left:5%;width:20vw !important;}
+
+
+	
+	
+
+

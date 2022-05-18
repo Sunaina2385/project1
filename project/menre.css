@@ -1,0 +1,24 @@
+/*setting logo at center and adjusting icons**/
+@media screen and (max-width:1350px){#icons{width:90vw;}
+#logo{position:relative;left:35%;width:20vw !important;}
+.B{width:12vw !important;}}
+@media screen and (max-width:1200px){#cs{width:30% !important;height:40vh !important;}
+}
+
+@media screen and (max-width:1100px){.B{display:none !important;}}
+
+
+@media screen and (max-width:600px){#cs{margine:0!important;width:70vw !important;height:50vh !important;}
+h1{font-size:1.5rem;}
+@media screen and (max-width:400px){#cs{margine:0!important;width:50vw !important;height:40vh !important;margin-right:50px;}
+h1{font-size:1.0rem;}
+#icons{display:none;}
+}
+
+
+
+
+	
+	
+
+

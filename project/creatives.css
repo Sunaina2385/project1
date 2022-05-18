@@ -1,0 +1,19 @@
+body{margin-left:50px;background-image:url(https://media.istockphoto.com/photos/cheerful-happy-woman-enjoying-shopping-picture-id1153458344?k=20&m=1153458344&s=612x612&w=0&h=GFlEIm3mL3jxWyyL0lMYGpxPau7PDVRqjKkQmOIDDRQ=);
+background-size: cover;
+background-position: center;
+font-family:sans-serif;}
+main{width:70%;display:inline-block;}
+#logo img{height:120px;width:150px;border:2px solid white;box-shadow:0px 0px 4px 6px;margin:0px 500px;border-radius:50%;}
+
+.div{height:80px;width:40%;background-color:white;margin-bottom:20px;padding:10px 0px 10px 10px;
+}
+#choosefabric .div img{height:50px;width:50px;
+}
+h2{text-decoration:underline;font-style:italic;}
+main h2,h3{font-weight:bold;}
+h2:hover,h3:hover{text-decoration:underline;
+}      
+aside{width:20%;display:inline-block;vertical-align:top;}
+aside div img{height:300px;width:300px;}
+aside div{width:300px; ;border:2px solid black;padding:5px;background-color:#f1f1f1;}
+aside div h3{color:red;}

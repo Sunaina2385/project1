@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<title> Pop-up window </title>
+<link rel="icon"  href="creative.png">
+<style type="text/css">
+ body, html {
+	  height: 100%;
+	}
+
+#main-box{
+	border: 1px solid black;
+	width: 600px;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url(background4.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 100;
+}
+#main-box>button{
+    margin-left: 93%;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+#container{
+	width: 400px;
+	background-color: white;
+	margin-left: 100px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+.logo {
+	text-align: center;
+}
+.off{
+	text-align: center;
+}
+.second-box{
+	text-align: center;
+}
+
+.second-box>button{
+	width: 250px;
+	height: 50px;
+	outline: none;
+	color: white;
+	background-color: black;
+	font-family: serif;
+	font-weight: 200;
+	letter-spacing: 2px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.second-box>button:active{
+	transform:scale(1.1);
+}
+a{
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 2px;
+
+}
+@keyframes example{from{
+transform:translate3d(0,0,0)
+;
+
+}to{transform:translate(0,30px,30px);}}
+#main-box{top:50%;left:48%;
+
+position:absolute;
+animation:example 0.2s linear 2 alternate;}
+/**background blur**/
+.containers {
+	  position: relative;
+	  background-image: url("backgroundforpopup.jpg");
+	  background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+	  height: 100%;
+	  filter: blur(15px); /* Adding blur background image */
+	}
+</style>
+</head>
+<body>
+<div class="containers"></div>
+	<div id="main-box">
+		<button id="close">&times;</button>
+	<div id="container">
+		<div class="logo"><img src="logo1.jpeg" height="100px" width="100px"></div>
+		<div class="off"><img src="offer.jpeg" height="280px" width="400px"></div>
+		<div class="second-box">
+		<input type="email" name="email" class="mail" placeholder="Enter your Email" style="text-align: center; width: 250px; height: 45px; border-color: black; font-family: serif; font-size: inherit;">
+		<br />
+		<br />
+        <button>GET MY 15% OFF</button>
+        <br />
+        <br />
+        <a href="" class="thank">NO THANKS</a>
+        </div>
+    </div>
+	</div>	
+
+	 <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector("#main-box").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector("#main-box").style.display = "none";
+});
+    </script>
+</body>
+</html>
